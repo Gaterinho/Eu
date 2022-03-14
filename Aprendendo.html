@@ -1,0 +1,41 @@
+<table border="1">
+    <caption>Exemplos de tb complexa</caption>
+
+    <colgroup> <!-- esse comando aqui serve para controlar as colunas agrupadas-->
+        <col> <!-- esse aqui para mexer nelas-->
+        <col span="2" style="background-color: aqua;">
+        <col span="2" style="background-color: blueviolet;">
+    </colgroup>
+
+    <thead> <!--Cabeça do projeto-->
+        <tr> <!--Linhas-->
+            <!--th aqui é para cabeçalho, pra destaque-->
+            <th rowspan="2"></th> <!--Esse Rowspan, é para linha-->
+            <th colspan="2" scope="colgroup">jr Lindo</th> <!--Esse colspan é para coluna-->
+            <th colspan="2" scope="colgroup" style="color: aliceblue;" >Tata linda</th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col" style="color:aliceblue">Produzidos</th>
+            <th scope="col" style="color:aliceblue">Vendidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--Coloquei style aqui só pra ver se dava certo, e deuuu-->
+        <tr> <!--o td é pra coisa normal-->
+            <th scope="row">Blusa</th>
+            <td>20</td>
+            <td>40</td>
+            <td style="color: aliceblue;">35</td>
+            <td style="color: aliceblue;">20</td>
+        </tr>
+        <tr>
+            <th scope="row">Short</th>
+            <td>40</td>
+            <td>38</td>
+            <td style="color:aliceblue">35</td>
+            <td style="color:aliceblue">33</td>
+        </tr>
+    </tbody>
+</table>
